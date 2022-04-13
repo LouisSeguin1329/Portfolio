@@ -1,0 +1,20 @@
+/* ==========================================================================
+   COLORS / SETTINGS
+   ========================================================================== */
+
+:root {
+    // Couleur de base
+    --color-white: #fff;
+    --color-black: #000;
+
+    // Couleurs du projet
+    --color-primary: #000;
+    --color-primary-darker: #000;
+    --color-secondary: #be9fff;
+
+    --color-bg-primary: var(--color-white);
+    --color-bg-secondary: #ff0000;
+
+    --color-degrader: linear-gradient(245.92deg, #f7b100 8.93%, #d800ff 94.26%);
+    --color-degrader-menu: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), linear-gradient(212.03deg, #F7B100 11.75%, #D800FF 102.81%);
+}

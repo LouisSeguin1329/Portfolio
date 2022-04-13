@@ -1,0 +1,29 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-h1: 'Quando', serif;
+    --font-h2: 'Manjari', sans-serif;
+    --font-h3-4: 'Kotta One', serif;
+    --font-p: 'Montserrat', sans-serif;
+
+    --font-size-content: 1rem;
+
+    /// Grosseur des textes
+    --font-size-h1: 6rem; //96
+    --font-size-h2: 4rem; //64
+    --font-size-h3: 2.25rem; //36
+    --font-size-h4: 1.5rem; //24
+    --font-size-p: 2.375rem; //38
+    --font-size-btn: 1.125rem; //18
+    --font-size-nav: 1.875rem; //30
+
+    --font-size-xs-h1: 6rem; //96
+    --font-size-xs-h2: 4rem; //64
+    --font-size-xs-h3: 2.25rem; //36
+    --font-size-xs-h4: 1.5rem; //24
+    --font-size-xs-p: 2.375rem; //38
+    --font-size-xs-btn: 1.125rem; //18
+    --font-size-xs-nav: 1.875rem; //30
+}
