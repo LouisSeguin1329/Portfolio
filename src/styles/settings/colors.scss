@@ -13,8 +13,13 @@
     --color-secondary: #be9fff;
 
     --color-bg-primary: var(--color-white);
-    --color-bg-secondary: #ff0000;
+    --color-bg-secondary: #be9fff;
 
     --color-degrader: linear-gradient(245.92deg, #f7b100 8.93%, #d800ff 94.26%);
-    --color-degrader-menu: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), linear-gradient(212.03deg, #F7B100 11.75%, #D800FF 102.81%);
+    --color-degrader-menu: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ),
+        linear-gradient(212.03deg, #f7b100 11.75%, #d800ff 102.81%);
 }

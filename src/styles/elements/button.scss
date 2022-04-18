@@ -1,0 +1,19 @@
+/* ==========================================================================
+ BUTTON / ELEMENT
+ ========================================================================== */
+
+button:not(.header__toggle) {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: var(--font-size-btn);
+    background: linear-gradient(245.92deg, #f7b100 8.93%, #d800ff 94.26%);
+    padding: 15px;
+    position: relative;
+
+    .coinBtn {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+}
