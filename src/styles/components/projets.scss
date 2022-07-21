@@ -1,9 +1,17 @@
 .section-projets {
+    margin: 0 10px;
+    text-align: center;
     .mes-projets {
         .projet {
+            display: flex;
+            flex-direction: column;
+            .txt-projet {
+                order: 1;
+            }
             .logos-projets {
             }
             .img-projet {
+                order: 0;
             }
         }
     }
