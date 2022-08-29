@@ -1,0 +1,29 @@
+.section-a-propos {
+    .presentation {
+        .img-profil {
+        }
+    }
+    .competences {
+        .creation-media {
+            .icons-creation {
+                .logo-creation {
+                    position: relative;
+                    .icons-competence {
+                        border: white 1px solid;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    .mask1 {
+                        mask-image: url(../../assets/images/mask-bg.svg);
+                        mask-repeat: no-repeat;
+                    }
+                    .bg-logo {
+                        /*  position: absolute;
+                        z-index: -1;
+                        bottom: 0; */
+                    }
+                }
+            }
+        }
+    }
+}
