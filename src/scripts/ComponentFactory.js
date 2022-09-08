@@ -5,13 +5,15 @@ import Header from './components/Header';
 //import Accordeon from './components/Accordeon';
 import Form from './components/Form';
 import Video from './components/Video';
+import Hover from './components/Hover';
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       //  Carousel,
-        Header,
+      Header,
+      Hover,
       // Modal,
       // Scrolly,
       // Accordeon,
