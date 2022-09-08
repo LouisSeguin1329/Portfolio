@@ -23,9 +23,15 @@ h3 {
 h4 {
     font-family: var(--font-h3-4);
     font-size: var(--font-size-h4);
+    font-weight: 400;
 }
 
 h5 {
     font-family: var(--font-h3-4);
     font-size: var(--font-size-h5);
+}
+
+h6 {
+    font-family: var(--font-h6);
+    font-size: var(--font-size-h6);
 }

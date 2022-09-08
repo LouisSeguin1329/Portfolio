@@ -5,23 +5,43 @@
     }
     .competences {
         .creation-media {
+            h4 {
+                margin: 0;
+            }
             .icons-creation {
+                display: flex;
+                width: 100%;
+                margin: 10px 0;
+                justify-content: space-between;
                 .logo-creation {
-                    position: relative;
                     .icons-competence {
-                        border: white 1px solid;
-                        position: relative;
-                        z-index: 2;
+                        max-width: 66px;
                     }
-                    .mask1 {
-                        mask-image: url(../../assets/images/mask-bg.svg);
-                        mask-repeat: no-repeat;
-                    }
-                    .bg-logo {
-                        /*  position: absolute;
-                        z-index: -1;
-                        bottom: 0; */
-                    }
+                }
+            }
+            .txt-competence {
+                display: none;
+                flex-direction: column;
+                padding: 5px 16px;
+                color: var(--color-primary);
+                background: linear-gradient(
+                        0deg,
+                        rgba(255, 255, 255, 0.5),
+                        rgba(255, 255, 255, 0.5)
+                    ),
+                    linear-gradient(212.03deg, #f7b100 11.75%, #d800ff 102.81%);
+                border-radius: 13.4413px;
+
+                h6 {
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                .description-logiciel {
+                    border-bottom: solid 1px black;
                 }
             }
         }
