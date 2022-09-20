@@ -193,6 +193,7 @@
                             <div
                                 class="logo-creation logo-procreate"
                                 data-component="Hover"
+                                data-modal-id="modal-dynamic"
                             >
                                 <img
                                     id="logoprocreate"
@@ -232,7 +233,7 @@
                         </div>
                         <!--    TEXTE COMPÉTENCE CRÉATION -->
 
-                        <div class="txt-competence txt-ae">
+                        <!--  <div class="txt-competence txt-ae">
                             <h6>After Effect</h6>
                             <p class="description-logiciel">
                                 Logiciel Adobe d’effets spéciaux et animations
@@ -252,7 +253,23 @@
                                 Logiciel de modélisation 3D
                             </p>
                             <p>Modèls 3D, animation 3D</p>
-                        </div>
+                        </div> -->
+
+                        <template id="modal-dynamic">
+                            <div class="modal">
+                                <!--    <div class="modal__scrim"></div> -->
+                                <div class="modal__box">
+                                    <div class="modal__content">
+                                        <h6>{{title}}</h6>
+                                        <p class="txt_modal"></p>
+                                        <!--   <img class="modal__img" src="assets/images/asparagus.png" alt="" /> -->
+                                    </div>
+                                    <button
+                                        class="modal__close js-close"
+                                    ></button>
+                                </div>
+                            </div>
+                        </template>
                     </div>
                 </div>
             </section>
