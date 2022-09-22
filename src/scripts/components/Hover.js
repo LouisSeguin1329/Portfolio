@@ -7,6 +7,7 @@ export default class Hover {
   constructor(element) {
     this.element = element;
     this.modalId = this.element.dataset.modalId;
+    this.parent = this.element.parentElement.parentElement;
 
     this.init();
   }
@@ -15,7 +16,10 @@ export default class Hover {
   init() {
     this.element.addEventListener('mouseenter', this.open.bind(this));
 
-    this.close = this.close.bind(this);
+    this.element.addEventListener('mouseleave', this.close.bind(this));
+
+    // console.log(this.parent);
+    // this.close = this.close.bind(this);
   }
 
   //Méthode de mise à jour du contenue
@@ -26,35 +30,43 @@ export default class Hover {
         this.modalElement.innerHTML,
         { title: this.element.querySelector('h6').innerHTML }
       );
-      //changer l'image de la modale selon l'image de l'élement
-      const txtAChanger = this.element.querySelector('p');
-      const txtModal = this.modalElement.querySelector('.txt_modal');
+      //changer le texte de la modale selon le texte de l'élement
+      const txtAChanger1 = this.element.querySelector('.description-logiciel');
+      const txtModal1 = this.modalElement.querySelector('.txt_modal');
 
-      txtModal.textContent = txtAChanger.innerHTML;
+      txtModal1.textContent = txtAChanger1.innerHTML;
+
+      const txtAChanger2 = this.element.querySelector('.explication-logiciel');
+      const txtModal2 = this.modalElement.querySelector('.txt_modal2');
+
+      txtModal2.textContent = txtAChanger2.innerHTML;
     }
   }
 
   //Méthode pour ouvrir la modale
   open(event) {
     this.appendModal();
+    console.log('open');
   }
 
   //Méthode pour fermer la modale
   close(event) {
+    console.log('out');
     document.documentElement.classList.remove('modal-is-active');
-    this.closeButton.removeEventListener('click', this.close);
-    setTimeout(this.destroy.bind(this), 1000);
+    this.destroy();
+    // this.closeButton.removeEventListener('click', this.close);
+    // setTimeout(this.destroy.bind(this), 1000);
   }
 
   //Méthode pour fermer la modale en appuyant sur la touche ESC
-  closeEscape(event) {
+  /*  closeEscape(event) {
     if (event.key == 'Escape') {
       document.documentElement.classList.remove('modal-is-active');
       this.closeButton.removeEventListener('keydown', this.closeEscape);
       this.closeButton.removeEventListener('click', this.close);
       setTimeout(this.destroy.bind(this), 1000);
     }
-  }
+  } */
 
   //Méthode pour détruire la modale
   destroy() {
@@ -73,19 +85,20 @@ export default class Hover {
 
       this.updateContent();
 
-      document.body.appendChild(this.modalElement);
+      // document.body.appendChild(this.modalElement);
+      this.parent.appendChild(this.modalElement);
 
       this.element.getBoundingClientRect();
       document.documentElement.classList.add('modal-is-active');
-
-      this.closeButton = this.modalElement.querySelector('.js-close');
-      this.closeButton.addEventListener('click', this.close);
-      document.addEventListener('keydown', this.closeEscape.bind(this));
-
+      this.element.classList.add('modal-is-active');
+      // this.closeButton = this.modalElement.querySelector('.js-close');
+      //  this.closeButton.addEventListener('click', this.close);
+      //document.addEventListener('keydown', this.closeEscape.bind(this));
+      /* 
       this.modalElement
         .querySelector('.modal__scrim')
         .addEventListener('click', this.close);
-      console.log(this.closeButton);
+      console.log(this.closeButton); */
     } else {
       console.log(`Le <template> avec le id ${this.modalId} n'existe pas`);
     }

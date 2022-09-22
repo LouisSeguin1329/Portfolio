@@ -21,28 +21,6 @@
             }
             .txt-competence {
                 display: none;
-                flex-direction: column;
-                padding: 5px 16px;
-                color: var(--color-primary);
-                background: linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.5),
-                        rgba(255, 255, 255, 0.5)
-                    ),
-                    linear-gradient(212.03deg, #f7b100 11.75%, #d800ff 102.81%);
-                border-radius: 13.4413px;
-
-                h6 {
-                    margin: 0;
-                }
-
-                p {
-                    margin: 0;
-                }
-
-                .description-logiciel {
-                    border-bottom: solid 1px black;
-                }
             }
         }
     }

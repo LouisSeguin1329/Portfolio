@@ -10,24 +10,19 @@
     overflow: hidden;
     z-index: 20;
 
-    transform: translateY(-100%);
+    /*  transform: translateY(-100%);
     transition: opacity 0.8s $ease-out-expo 0.4s, transform 0s 0.4s;
-
+ */
     .modal-is-active & {
         opacity: 1;
-        transform: translateY(0);
-        transition: opacity 0.8s $ease-out-expo, transform 0s;
+        /*   transform: translateY(0);
+        transition: opacity 0.8s $ease-out-expo, transform 0s; */
     }
 }
 
 .modal__content {
-    // overflow: hidden;
-    // height: 100%;
-    // padding: var(--modal-padding);
-    // overflow-y: auto;
-
     flex-direction: column;
-    padding: 5px 16px;
+    padding: 10px 16px;
     color: var(--color-primary);
     background: linear-gradient(
             0deg,
@@ -40,86 +35,36 @@
     h6 {
         margin: 0;
     }
+
+    p {
+        margin: 0;
+    }
+
+    .txt_modal {
+        border-bottom: solid 1px black;
+        margin-bottom: 5px;
+    }
+
+    .txt_modal2 {
+    }
 }
 
 .modal__box {
     overflow: hidden;
-    // background-color: var(--color-white);
     border-radius: 10px;
     color: var(--color-black);
     width: 80vw;
     position: relative;
-    height: 80vh;
+    // height: 80vh;
     z-index: 1;
     opacity: 1;
+    /* 
     transform: scale(0) rotate(0);
-
     transition: all 0.4s $ease-in-expo;
-
+ */
     .modal-is-active & {
         opacity: 1;
-        transform: scale(1) rotate(360deg);
-
-        transition: all 0.4s $ease-out-expo 0.2s;
+        /*  transform: scale(1) rotate(360deg);
+        transition: all 0.4s $ease-out-expo 0.2s; */
     }
 }
-
-/* .modal__close {
-    --bar-width: 2px;
-    --button-size: 40px;
-
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    height: var(--button-size);
-    outline: none;
-    padding: 0;
-    position: absolute;
-    right: calc(var(--modal-padding) / 2);
-    top: calc(var(--modal-padding) / 2);
-    width: var(--button-size);
-
-    &::before,
-    &::after {
-        background: var(--color-black);
-        bottom: 0;
-        content: '';
-        height: var(--bar-width);
-        left: 0;
-        right: 0;
-        top: 0;
-        margin: auto;
-        position: absolute;
-        transition: transform 0.3s $ease-out-expo;
-        width: 80%;
-    }
-
-    &::before {
-        transform: rotate(-45deg);
-    }
-    &::after {
-        transform: rotate(45deg);
-    }
-
-    &:hover {
-        opacity: 0.7;
-        &::before {
-            transform: rotate(0);
-        }
-        &::after {
-            transform: rotate(0);
-        }
-    }
-}
- */
-/* .modal__scrim {
-    background-color: var(--color-black);
-    opacity: 0.8;
-    @include cover();
-}
-
-
-
-.modal-is-active body {
-    overflow: hidden;
-} */
