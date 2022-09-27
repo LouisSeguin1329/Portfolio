@@ -174,6 +174,8 @@
             <section class="section-a-propos">
                 <div class="presentation">
                     <h2>À propos</h2>
+                    <img src="assets/images/img-photo_profil.png" alt="" class="img_profil" />
+                   <div class="txt-presentation">
                     <h3>Hello! Moi c'est Louis,</h3>
                     <p>
                         Je suis un finissant en technique d’intégration
@@ -183,25 +185,25 @@
                         Je suis ouvert d’esprit, honnête et créatif. Je cherche
                         un stage multidisciplinaire qui me fera me surpasser.
                     </p>
-                    <img src="" alt="" class="img-profil" />
+                    </div>
                 </div>
                 <div class="competences">
                     <!--////////////////  CREATION MEDIA ///////////////////-->
-                    <div class="creation-media">
+                    <div id="creation" class="creation-media">
+                       
                         <h4>Créations médias</h4>
                         <div class="icons-creation">
                             <div
-                                class="logo-creation logo-procreate"
+                                class="logo-creation"
                                 data-component="Hover"
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    id="logoprocreate"
                                     src="assets/images/logo-competence/logo-procreate.png"
                                     alt="icon procreate"
-                                    class="icons-competence icon-procreate"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txtprocreate">
+                                <div class="txt-competence">
                                     <h6>Procreate</h6>
                                     <p class="description-logiciel">
                                         Application IOS d’arts digital
@@ -278,50 +280,27 @@
                     </div>
 
                     <!-- //////////////////////////   PROGRAMMATION //////////////////-->
-                    <div class="creation-media">
+                    <div id="programmation" class="programmation">
                         <h4>Programmation</h4>
-                        <div class="icons-creation">
+                        <div class="icons-programmation">
                             <div
-                                class="logo-creation logo-procreate"
+                                class="logo-creation logo-vsc"
                                 data-component="Hover"
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    id="logoprocreate"
-                                    src="assets/images/logo-competence/logo-procreate.png"
-                                    alt="icon procreate"
-                                    class="icons-competence icon-procreate"
+                                    src="assets/images/logo-competence/logo-vsc.png"
+                                    alt="icon vsc"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txtprocreate">
-                                    <h6>Procreate</h6>
+                                <div class="txt-competence">
+                                    <h6>Visual Studio Code</h6>
                                     <p class="description-logiciel">
-                                        Application IOS d’arts digital
+                                        Éditeur de code
                                     </p>
                                     <p class="explication-logiciel">
-                                        Utilisé pour la création de croquis et
-                                        d'illustrations matricielles.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                class="logo-creation logo-procreate"
-                                data-component="Hover"
-                                data-modal-id="modal-dynamic"
-                            >
-                                <img
-                                    id="logoprocreate"
-                                    src="assets/images/logo-competence/logo-procreate.png"
-                                    alt="icon procreate"
-                                    class="icons-competence icon-procreate"
-                                />
-                                <div class="txt-competence txtprocreate">
-                                    <h6>Procreate</h6>
-                                    <p class="description-logiciel">
-                                        Application IOS d’arts digital
-                                    </p>
-                                    <p class="explication-logiciel">
-                                        Utilisé pour la création de croquis et
-                                        d'illustrations matricielles.
+                                        Utilisé pour la programmation C# et le
+                                        Développement et L'Intégration Web
                                     </p>
                                 </div>
                             </div>
@@ -331,19 +310,18 @@
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    src="assets/images/logo-competence/logo-ae.png"
-                                    alt="icon after effect"
-                                    class="icons-competence aftereffect"
+                                    src="assets/images/logo-competence/logo-unity.png"
+                                    alt="icon unity"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txt-ae">
-                                    <h6>After Effect</h6>
+                                <div class="txt-competence">
+                                    <h6>Unity</h6>
                                     <p class="description-logiciel">
-                                        Logiciel Adobe d’effets spéciaux et
-                                        animations
+                                        Logiciel de développement de jeux vidéos
                                     </p>
                                     <p class="explication-logiciel">
-                                        Utilisé pour l'animation 2D, le montage,
-                                        les effets spéciaux
+                                        Utilisé pour l'intégration d'éléments 2D
+                                        et/ou 3D d'un jeu vidéo.
                                     </p>
                                 </div>
                             </div>
@@ -353,17 +331,19 @@
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    src="assets/images/logo-competence/logo-ai.png"
-                                    alt="icon illustrator"
-                                    class="icons-competence illustrator"
+                                    src="assets/images/logo-competence/logo-cSharp.png"
+                                    alt="icon c sharp"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txt-ai">
-                                    <h6>Illustrator</h6>
+                                <div class="txt-competence">
+                                    <h6>C# / C Sharp</h6>
                                     <p class="description-logiciel">
-                                        Logiciel Adobe d’illustration vectoriel
+                                        Langage de programmation de
+                                        développement de jeux vidéo
                                     </p>
                                     <p class="explication-logiciel">
-                                        Illustrations vectoriels
+                                        Utilisé pour la programmation de script
+                                        pour Unity.
                                     </p>
                                 </div>
                             </div>
@@ -373,17 +353,38 @@
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    src="assets/images/logo-competence/logo-blender.png"
-                                    alt="icon blender"
-                                    class="icons-competence blender"
+                                    src="assets/images/logo-competence/logo-html.png"
+                                    alt="icon Html"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txt-blender">
-                                    <h6>Blender</h6>
+                                <div class="txt-competence">
+                                    <h6>Html 5</h6>
                                     <p class="description-logiciel">
-                                        Logiciel de modélisation 3D
+                                        Language d'intégraiton Web
                                     </p>
                                     <p class="explication-logiciel">
-                                        Modèls 3D, animation 3D
+                                        Balisage des interfaces des pages web.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="logo-creation"
+                                data-component="Hover"
+                                data-modal-id="modal-dynamic"
+                            >
+                                <img
+                                    src="assets/images/logo-competence/logo-css.png"
+                                    alt="icon css"
+                                    class="icons-competence"
+                                />
+                                <div class="txt-competence">
+                                    <h6>Css</h6>
+                                    <p class="description-logiciel">
+                                        Language de feuilles de styles en
+                                        cascades
+                                    </p>
+                                    <p class="explication-logiciel">
+                                        Intégrer des styles aux balises html.
                                     </p>
                                 </div>
                             </div>
@@ -393,27 +394,26 @@
                     <!-- //////////////////////////   AUTRE //////////////////-->
 
                     <div class="creation-media">
-                        <h4>Créations médias</h4>
+                        <h4>Autres Compétences</h4>
                         <div class="icons-creation">
                             <div
-                                class="logo-creation logo-procreate"
+                                class="logo-creation"
                                 data-component="Hover"
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    id="logoprocreate"
-                                    src="assets/images/logo-competence/logo-procreate.png"
-                                    alt="icon procreate"
-                                    class="icons-competence icon-procreate"
+                                    src="assets/images/logo-competence/logo-figma.png"
+                                    alt="icon Figma"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txtprocreate">
-                                    <h6>Procreate</h6>
+                                <div class="txt-competence">
+                                    <h6>Figma</h6>
                                     <p class="description-logiciel">
-                                        Application IOS d’arts digital
+                                        Application Web de design et prototypage
                                     </p>
                                     <p class="explication-logiciel">
-                                        Utilisé pour la création de croquis et
-                                        d'illustrations matricielles.
+                                        Utilisé pour la création de maquettes de
+                                        sites web et de prototypes d'interfaces.
                                     </p>
                                 </div>
                             </div>
@@ -423,19 +423,18 @@
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    src="assets/images/logo-competence/logo-ae.png"
-                                    alt="icon after effect"
-                                    class="icons-competence aftereffect"
+                                    src="assets/images/logo-competence/logo-js.png"
+                                    alt="icon Java Script"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txt-ae">
-                                    <h6>After Effect</h6>
+                                <div class="txt-competence">
+                                    <h6>JavaScript</h6>
                                     <p class="description-logiciel">
-                                        Logiciel Adobe d’effets spéciaux et
-                                        animations
+                                        Langage de programmation de scripts
                                     </p>
                                     <p class="explication-logiciel">
-                                        Utilisé pour l'animation 2D, le montage,
-                                        les effets spéciaux
+                                        Utilisé pour ajouter de l’intéractivités
+                                        et des animations à une page web.
                                     </p>
                                 </div>
                             </div>
@@ -445,17 +444,18 @@
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    src="assets/images/logo-competence/logo-ai.png"
-                                    alt="icon illustrator"
-                                    class="icons-competence illustrator"
+                                    src="assets/images/logo-competence/logo-wordpress.png"
+                                    alt="icon wordpress"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txt-ai">
-                                    <h6>Illustrator</h6>
+                                <div class="txt-competence">
+                                    <h6>Wordpress</h6>
                                     <p class="description-logiciel">
-                                        Logiciel Adobe d’illustration vectoriel
+                                        Logiciel de gestion de site web
                                     </p>
                                     <p class="explication-logiciel">
-                                        Illustrations vectoriels
+                                        Gérer des pages web, blogue, boutiques
+                                        en php.
                                     </p>
                                 </div>
                             </div>
@@ -465,17 +465,18 @@
                                 data-modal-id="modal-dynamic"
                             >
                                 <img
-                                    src="assets/images/logo-competence/logo-blender.png"
-                                    alt="icon blender"
-                                    class="icons-competence blender"
+                                    src="assets/images/logo-competence/logo-php.png"
+                                    alt="icon php"
+                                    class="icons-competence"
                                 />
-                                <div class="txt-competence txt-blender">
-                                    <h6>Blender</h6>
+                                <div class="txt-competence">
+                                    <h6>Php</h6>
                                     <p class="description-logiciel">
-                                        Logiciel de modélisation 3D
+                                        Langage de programmation web
                                     </p>
                                     <p class="explication-logiciel">
-                                        Modèls 3D, animation 3D
+                                        Transcrire les sites web html en php
+                                        pour utilisation avec Wordpress.
                                     </p>
                                 </div>
                             </div>
@@ -483,6 +484,162 @@
                     </div>
                 </div>
             </section>
+            <section class="contact">
+                <section class="wrapper">
+                    <h1>Contact</h1>
+
+                    <div class="contenu-contact">
+                        <div class="form">
+                            <form
+                                action="page-contact.php"
+                                class="form"
+                                autocomplete="off"
+                                data-component="Form"
+                                method="post"
+                            >
+                                <div class="form_body">
+                                    <fieldset class="grid">
+                                        <div class="input">
+                                            <label
+                                                class="input_label"
+                                                for="fullname"
+                                                >Votre nom</label
+                                            >
+                                            <div class="border-contact">
+                                                <input
+                                                    class="input_element"
+                                                    type="text"
+                                                    name="fullname"
+                                                    id="fullname"
+                                                    placeholder="ex.: Jean-François"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="input">
+                                            <label
+                                                class="input_label"
+                                                for="email"
+                                                >Votre courriel</label
+                                            >
+                                            <input
+                                                class="input_element"
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                placeholder="ex.: asdfg@hotmail.com"
+                                                required
+                                            />
+                                        </div>
+                                        <div
+                                            class="
+                                                input
+                                                textarea
+                                                u-grid-fullwidth
+                                            "
+                                        >
+                                            <label
+                                                class="input_label"
+                                                for="comment"
+                                                >Votre message</label
+                                            >
+                                            <textarea
+                                                class="
+                                                    input_element
+                                                    comment-area
+                                                "
+                                                name="comment"
+                                                id="comment"
+                                                placeholder="Votre message ici..."
+                                                required
+                                            ></textarea>
+                                        </div>
+                                    </fieldset>
+                                    <button
+                                        type="submit"
+                                        name="submit"
+                                        class="btn-form"
+                                    >
+                                        Envoyer
+                                        <img
+                                            class="coinBtn"
+                                            src="assets/images/coin-btn.png"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mes-reseaux-sociaux">
+                            <div class="rs">
+                                <img
+                                    src="assets/images/logo-courriel.png"
+                                    alt=""
+                                    class="logo-rs"
+                                />
+                                <a
+                                    href="mailto:info@louisseguin.com"
+                                    class="lien-rs"
+                                    >info@louisseguin.com</a
+                                >
+                            </div>
+                            <div class="rs">
+                                <img
+                                    src="assets/images/logo-phone.png"
+                                    alt=""
+                                    class="logo-rs"
+                                />
+                                <a href="tel:438-497-6495" class="lien-rs"
+                                    >438-497-6495</a
+                                >
+                            </div>
+                            <div class="rs">
+                                <img
+                                    src="assets/images/logo-facebook.png"
+                                    alt=""
+                                    class="logo-rs"
+                                />
+                                <a
+                                    href="https://www.facebook.com/louis1329"
+                                    class="lien-rs"
+                                    >Louis Séguin</a
+                                >
+                            </div>
+                            <div class="rs">
+                                <img
+                                    src="assets/images/logo-linkedin.png"
+                                    alt=""
+                                    class="logo-rs"
+                                />
+                                <a
+                                    href="https://www.linkedin.com/in/louis-s%C3%A9guin-897649220/"
+                                    class="lien-rs"
+                                    >Louis Séguin</a
+                                >
+                            </div>
+                            <div class="rs">
+                                <img
+                                    src="assets/images/logo-github.png"
+                                    alt=""
+                                    class="logo-rs"
+                                />
+                                <a
+                                    href="https://github.com/LouisSeguin1329"
+                                    class="lien-rs"
+                                    >LouisSeguin1329</a
+                                >
+                            </div>
+                            <a
+                                href="assets/pdf/Curriculum Vitae.pdf"
+                                download
+                                class="btn-cv"
+                                >Télécharger mon CV</a
+                            >
+                        </div>
+                    </div>
+                </section>
+
         </div>
         <template id="modal-dynamic">
             <div class="modal">

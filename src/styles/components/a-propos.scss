@@ -1,6 +1,8 @@
 .section-a-propos {
     .presentation {
-        .img-profil {
+        .img_profil {
+            float: right;
+            max-width: 65%;
         }
     }
     .competences {
@@ -29,12 +31,26 @@
                 display: none;
             }
         }
+        .programmation {
+            h4 {
+                margin: 0;
+            }
+            .icons-programmation {
+                display: flex;
+                width: 100%;
+                margin: 10px 0;
+                justify-content: space-between;
+                //max-width: max-content;
+                .logo-creation {
+                    text-align: center;
+                    .icons-competence {
+                        max-width: 90%;
+                    }
+                }
+            }
+            .txt-competence {
+                display: none;
+            }
+        }
     }
 }
-/* 
-.logo-procreate:hover {
-    .txt-competence {
-        display: flex;
-    }
-}
- */

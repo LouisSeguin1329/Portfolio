@@ -9,6 +9,8 @@ export default class Hover {
     this.modalId = this.element.dataset.modalId;
     this.parent = this.element.parentElement.parentElement;
 
+    this.creation = document.getElementById('creation');
+
     this.init();
   }
 
@@ -18,7 +20,7 @@ export default class Hover {
 
     this.element.addEventListener('mouseleave', this.close.bind(this));
 
-    // console.log(this.parent);
+    // console.log(this.parent.getAttribute('id'));
     // this.close = this.close.bind(this);
   }
 
@@ -55,7 +57,7 @@ export default class Hover {
     document.documentElement.classList.remove('modal-is-active');
     this.destroy();
     // this.closeButton.removeEventListener('click', this.close);
-    // setTimeout(this.destroy.bind(this), 1000);
+    //setTimeout(this.destroy.bind(this), 500);
   }
 
   //Méthode pour fermer la modale en appuyant sur la touche ESC
@@ -87,6 +89,10 @@ export default class Hover {
 
       // document.body.appendChild(this.modalElement);
       this.parent.appendChild(this.modalElement);
+
+      /*  if (this.parent.getAttribute('id') == 'creation') {
+        this.creation.appendChild(this.modalElement);
+      } */
 
       this.element.getBoundingClientRect();
       document.documentElement.classList.add('modal-is-active');
