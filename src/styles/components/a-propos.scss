@@ -1,8 +1,43 @@
 .section-a-propos {
     .presentation {
+        display: grid;
+        /*   grid-template-columns: 50px 50px 50px 50px 50px 50px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'h3 h3 h3 img img'
+            '. txt1 txt1 img img img'
+            '. txt2 txt2 txt2 img'; */
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         .img_profil {
-            float: right;
+            //  grid-area: img;
+            /*  float: right; */
             max-width: 65%;
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        h3 {
+            //  grid-area: h3;
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .text1 {
+            //   grid-area: txt1;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .text2 {
+            // grid-area: txt2;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 5;
         }
     }
     .competences {
