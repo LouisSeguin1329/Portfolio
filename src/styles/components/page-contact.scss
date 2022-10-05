@@ -1,0 +1,232 @@
+.contact {
+    padding: 50px 0 120px 0;
+    font-size: 20px;
+    h1 {
+        text-align: center;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-top: 100px;
+        }
+    }
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+
+    .contenu-contact {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: $breakpoint-md) {
+            margin: 0 100px;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            flex-direction: column;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            margin: 0 35px;
+        }
+
+        .form_body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            fieldset {
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+                border: none;
+
+                .border-contact {
+                    //  background-color: pink;
+                    width: 100%;
+                }
+                .input {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 15px;
+
+                    .input_label {
+                        font-size: 16px;
+                    }
+
+                    .input_element {
+                        border-image: linear-gradient(
+                                245.92deg,
+                                #f7b100 8.93%,
+                                #d800ff 94.26%
+                            )
+                            1;
+                        border-style: solid;
+                        border-width: 2px;
+                        padding: 16px 25px;
+                        width: 540px;
+                        border-radius: 13px;
+                        background-color: rgba(255, 255, 255, 0.8);
+
+                        @media screen and (max-width: $breakpoint-sm) {
+                            width: 170%;
+                        }
+                        @media screen and (max-width: $breakpoint-xs) {
+                            width: 155%;
+                        }
+
+                        &:-webkit-autofill,
+                        &:-webkit-autofill:active {
+                            -webkit-box-shadow: inset 0 0 0 30px
+                                var(--color-white) !important;
+                            -webkit-text-fill-color: inherit im !important;
+                        }
+
+                        //hover
+                        &:hover,
+                        + .input_label:hover::before {
+                            background-color: #ede4ff;
+                            -webkit-box-shadow: inset 0 0 0 30px #ede4ff !important;
+                        }
+
+                        &:focus,
+                        &:-webkit-autofill:focus,
+                        &:focus + .input_label::before {
+                            background-color: var(--color-white);
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                            -webkit-box-shadow: inset 0 0 0 30px
+                                var(--color-white) !important;
+                        }
+                        //autocomplete
+                        &::placeholder {
+                            color: #9b9b9b;
+                        }
+                    }
+                }
+
+                div textarea.comment-area {
+                    height: 222px;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        max-height: 200px;
+                    }
+                }
+            }
+        }
+        .btn-form {
+            //  margin-top: 20px;
+            text-align: center;
+            max-width: 122px;
+            align-self: center;
+        }
+
+        /*
+    Erroe
+    ========================================================================*/
+
+        .error {
+            .input_element {
+                box-shadow: inset 0 0 0 3px var(--color-fail);
+            }
+
+            .input_label {
+                color: red /* var(--color-fail) */;
+            }
+        }
+
+        .mes-reseaux-sociaux {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-height: 493px;
+            height: 100%;
+            .rs {
+                display: flex;
+                align-items: center;
+                margin: 20px 0;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    margin: 20px 0;
+                }
+
+                .logo-rs {
+                    margin-right: 20px;
+
+                    @media screen and (max-width: $breakpoint-md) {
+                        max-width: 40px;
+                    }
+                }
+                a {
+                    color: var(--color-white);
+                }
+            }
+            a.btn-cv {
+                text-align: center;
+                border-image: linear-gradient(
+                        245.92deg,
+                        #f7b100 8.93%,
+                        #d800ff 94.26%
+                    )
+                    1;
+                border-style: solid;
+                border-width: 2px;
+
+                padding: 10px;
+            }
+        }
+    }
+
+    .champi1 {
+        background-image: url(../../assets/images/Champignon1.svg);
+        width: 200px;
+        height: 325px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 200px;
+        left: 0;
+
+        z-index: -1;
+
+        @media screen and (max-width: $breakpoint-md) {
+            background-size: 50%;
+        }
+        @media screen and (max-width: 1335px) {
+            background-size: 65%;
+            height: 276px;
+            top: 112px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            background-size: 25%;
+            height: 86px;
+            top: 170px;
+        }
+    }
+    .champi2 {
+        background-image: url(../../assets/images/Champignon2.svg);
+        width: 170px;
+        height: 270px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 600px;
+        right: 0;
+
+        z-index: -1;
+
+        @media screen and (max-width: $breakpoint-md) {
+            background-size: 50%;
+            top: 739px;
+            right: -86px;
+        }
+        @media screen and (max-width: 1335px) {
+            background-size: 55%;
+            background-position: 50%;
+            right: -29px;
+            top: 672px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+            background-size: 35%;
+
+            right: -52px;
+        }
+    }
+}

@@ -37,10 +37,15 @@ header {
                     opacity: 1;
                 }
             }
+
+            .logo {
+                color: var(--color-white);
+            }
+
             .liste-nav {
                 position: absolute;
-                top: 20px;
-                right: 0;
+                top: 27px;
+                right: 3px;
                 left: 0;
                 padding: 105px 0;
                 //   background: #ffff;
@@ -64,6 +69,10 @@ header {
                     .nav-is-active & {
                         animation: fadeIn 1s ease-in;
                         opacity: 1;
+                    }
+
+                    a {
+                        color: white;
                     }
                 }
 
@@ -106,12 +115,13 @@ header {
                 border: none;
                 padding: 0;
                 position: relative;
+                right: -25px;
                 width: var(--bar-width);
                 height: var(--bar-width);
                 z-index: 10;
 
                 span {
-                    background: var(--color-primary);
+                    background: var(--color-white);
                     border-radius: 3px;
                     display: block;
                     height: var(--bar-height);
