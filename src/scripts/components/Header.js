@@ -9,6 +9,7 @@ export default class Header {
     this.scrollPosition = 0;
     this.html = document.documentElement;
     this.autoHide = document.querySelector('header').dataset.autoHide;
+    this.btnNav = document.querySelectorAll('.nav-primary_item');
 
     this.init();
     this.initNavMobile();
@@ -17,8 +18,13 @@ export default class Header {
   //Méthode d'initialisation
   init() {
     console.log('Init du header marche');
-
+    // console.log(this.btnNav);
     window.addEventListener('scroll', this.onScroll.bind(this));
+
+    for (var i = 0; i < this.btnNav.length; i++) {
+      //  console.log('loopps');
+      this.btnNav[i].addEventListener('click', this.closeNav.bind(this));
+    }
   }
 
   //Méthode durant le scroll
@@ -68,5 +74,10 @@ export default class Header {
   //Méthode pour ajouter ou enlever la classe 'nav-is-active' sur le html
   onToggleNav() {
     this.html.classList.toggle('nav-is-active');
+  }
+
+  closeNav() {
+    //   console.log('hihi');
+    this.html.classList.remove('nav-is-active');
   }
 }
