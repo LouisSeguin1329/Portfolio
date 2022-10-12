@@ -16,7 +16,7 @@ header {
     transition: all 0.4s $ease-out-quad;
 
     .header-is-hidden.is-scrolling-down & {
-        transform: translateY(-140%) translateY(6px);
+        transform: translateY(-175%) translateY(6px);
     }
 
     .header-wrapper {
