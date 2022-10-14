@@ -11,51 +11,63 @@
     </head>
 
     <body>
-        <div class="site-container">
-            <header
-                class="header"
-                data-component="Header"
-                data-scroll-limit="0.15"
-                data-auto-hide="true"
-            >
-                <div class="header-wrapper">
+        <header
+            class="header"
+            data-component="Header"
+            data-scroll-limit="0.15"
+            data-auto-hide="true"
+        >
+            <div class="header-wrapper">
+                <nav class="nav-primary">
                     <a href="index.html" class="logo">Louis Séguin</a>
-                    <nav class="nav-primary">
-                        <ul class="liste-nav">
-                            <li>
-                                <a href="index.html" class="nav-primary_item"
-                                    >Accueil</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="page-projets.html"
-                                    class="nav-primary_item"
-                                    >Projets</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="page-a-propos.html"
-                                    class="nav-primary_item"
-                                    >À propos</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    href="page-contact.html"
-                                    class="nav-primary_item"
-                                    >Contact</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="menu-hamburger header__toggle js-toggle">
-                        <img src="assets/images/btn-hamburger.png" alt="" />
-                    </button>
-                </div>
-            </header>
 
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="liste-nav">
+                        <li>
+                            <a
+                                href="#accueil"
+                                id="btnAccueil"
+                                class="nav-primary_item"
+                                >Accueil</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#projets"
+                                id="btnProjets"
+                                class="nav-primary_item"
+                                >Projets</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#propos"
+                                id="btnPropos"
+                                class="nav-primary_item"
+                                >À propos</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#contact"
+                                id="btnContact"
+                                class="nav-primary_item"
+                                >Contact</a
+                            >
+                        </li>
+
+                        <div class="blob-menu"></div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="site-container">
             <section class="section-single-projet">
                 <section class="wrapper-single">
                     <h1>Martine à la rescousse</h1>
