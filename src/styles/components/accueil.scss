@@ -7,6 +7,9 @@
     overflow: hidden;
     height: 100vh;
     .wrapper-accueil {
+        h1 {
+            white-space: nowrap;
+        }
         h2 {
             text-align: center;
             font-weight: normal;
