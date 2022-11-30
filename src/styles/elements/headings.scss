@@ -4,7 +4,7 @@
 
 h1 {
     font-family: var(--font-h1);
-    font-size: var(--font-size-h1);
+    font-size: var(--font-size-l-h1);
     text-transform: uppercase;
     text-align: center;
     //white-space: nowrap;
@@ -12,29 +12,29 @@ h1 {
 
 h2 {
     font-family: var(--font-h2);
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-l-h2);
     text-transform: uppercase;
     text-align: center;
 }
 
 h3 {
     font-family: var(--font-h3-4);
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-l-h3);
     text-align: center;
 }
 
 h4 {
     font-family: var(--font-h3-4);
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-l-h4);
     font-weight: 400;
 }
 
 h5 {
     font-family: var(--font-h3-4);
-    font-size: var(--font-size-h5);
+    font-size: var(--font-size-l-h5);
 }
 
 h6 {
     font-family: var(--font-h6);
-    font-size: var(--font-size-h6);
+    font-size: var(--font-size-l-h6);
 }

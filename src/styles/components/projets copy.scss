@@ -5,22 +5,14 @@
     .mes-projets {
         .projet {
             display: flex;
-            justify-content: space-evenly;
-            margin: 100px 0;
-
+            flex-direction: column;
             .txt-projet {
                 order: 1;
             }
             .logos-projets {
             }
             .img-projet {
-                max-width: 35%;
                 order: 0;
-            }
-        }
-        .projet2 {
-            .img-projet {
-                order: 1;
             }
         }
     }
